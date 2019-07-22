@@ -4,11 +4,7 @@ public class MainClass extends JApplet{
     public MainClass(){}
     public static MainClass mc = new MainClass();
     public static void main(String[] a){
-        EventQueue.invokeLater(new Runnable(){
-            public void run(){
-                mc.init();
-            }
-        });
+         mc.init();
     }
     public void init(){
         JButton jb1 = new JButton("file");
