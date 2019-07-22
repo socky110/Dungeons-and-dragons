@@ -1,7 +1,8 @@
-public class MainClass{
+import javax.swing.*; 
+import java.awt.event.*;
+public class MainClass extends JApplet{
     public MainClass(){}
     public static MainClass mc = new MainClass();
-    public static JApplet frame = new JApplet();
     public static void main(String[] a){
         EventQueue.invokeLater(new Runnable(){
             public void run(){
@@ -11,8 +12,7 @@ public class MainClass{
     }
     public void init(){
         JButton jb1 = new JButton("file");
-        frame.setDefaultCloseOperation(Jframe.EXIT_ON_CLOSE);
-        frame.add(jb1);
-        frame.setVisible(true);
+        this.add(jb1);
+        this.setVisible(true);
     }
 }
