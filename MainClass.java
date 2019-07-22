@@ -6,7 +6,7 @@ public class MainClass extends JApplet{
   public static void main(String[] a){ } 
   public void init(){ 
     JButton jb1 = new JButton("file");
-    this.getContentPane().add(jb1);
+    this.add(jb1);
     this.setVisible(true);
   }
 }
